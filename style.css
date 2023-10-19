@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+  display: flex;
+  /* align-content: stretch; */
+  width: 100%;
+  min-height: 100%;
+}
+
+/* SIDEBAR SECION START */
+.sidebar {
+  background-color: brown;
+  /* width: 245px; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  flex-grow: 1;
+  flex-basis: auto;
+}
+/* for when on large device */
+.sidebar-when-large {
+  /*  width of window 1250px+ */
+  width: 230px;
+}
+/* for when on small device */
+.sidebar-when-small {
+  /*  width of window 1250px+ */
+  width: 100px;
+}
+
+#logo {
+  background-color: aquamarine;
+  /* width: 220px; */
+  height: 92px;
+}
+
+#main-nav {
+  background-color: rgb(255, 0, 221);
+  /* width: 220px; TEMPORARY */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#upper-nav {
+  background-color: rgb(188, 236, 16);
+  /* width: 220px; */
+  height: 416px;
+}
+.menuitem {
+  /* width: 220px; */
+  height: 52px;
+  border: 3px solid rgb(12, 46, 240);
+}
+
+#lower-nav {
+  margin-top: 20%;
+  background-color: blueviolet;
+  /* width: 220px; */
+}
+/* SIDEBAR SECION END */
+
+/* MAIN CONTENT SECION START */
+.main-group {
+  min-height: 100vh;
+  width: 100%;
+  margin-right: 20px;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 3;
+  flex-basis: auto;
+}
+
+/* for when on big device */
+.main-when-large {
+  margin-left: 230px;
+}
+/* for when on small device */
+.main-when-small {
+  margin-left: 100px;
+}
+
+/* HEADER */
+.profile-info-container {
+  background-color: aqua;
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#row {
+  display: flex;
+  justify-content: space-evenly;
+}
+#row li {
+  /* temporary */
+  margin: 5%;
+  list-style: none;
+}
+#column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#column li {
+  list-style: none;
+}
+#profile-picture {
+  background-color: grey;
+}
+
+#profile-header-navigation {
+  background-color: yellow;
+}
+/* HEADER END */
+
+/* NAV */
+#nav-on-main {
+  display: flex;
+  background-color: blue;
+}
+/* NAV END */
+
+/* PHOTO SECTION */
+#content-holder {
+  max-width: inherit;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+}
+
+.main-image-content {
+  background-color: yellow;
+  max-width: 92%;
+  min-width: min-content;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-container {
+  height: 350px;
+  width: 350px;
+  background-color: #505ff9;
+  margin: 1rem;
+  color: #fff;
+  border: solid black 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* PHOTO SECTION END*/
+
+/* MAIN CONTENT SECION END */
