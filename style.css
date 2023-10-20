@@ -9,6 +9,8 @@ body {
   width: 100%;
   min-height: 100%;
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 /* SIDEBAR SECION START */
@@ -39,14 +41,16 @@ body {
 #logo {
   /* padding-top: 10%; */
   /* height: 10%; */
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 5%;
   /* background-color: aquamarine; */
   flex-grow: 1;
-
+  font-family: "Dancing Script", sans-serif;
+  font-size: larger;
+  font-weight: 300;
   /* width: 220px; */
   /* height: 92px; */
 }
@@ -74,7 +78,7 @@ body {
 
 #upper-nav {
   /* background-color: rgb(188, 236, 16); */
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 0.5%;
@@ -82,13 +86,26 @@ body {
   flex-grow: 6;
 }
 .menuitem {
+  width: 90%;
+  height: 52px;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 5%;
   /* width: 220px; */
-  height: 8%;
+  /* height: 8%; */
   /* border: 3px solid rgb(12, 46, 240); */
+  border: 1px;
+  border-radius: 10%;
+  padding: 5px;
+}
+.menuitem h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
+.menuitem:hover {
+  background-color: rgb(37, 37, 37);
 }
 #profile-button-image-container {
   border: 1px solid white;
@@ -111,7 +128,7 @@ body {
   /* background-color: blueviolet; */
   padding-top: 10%;
   padding-bottom: 10%;
-  width: 80%;
+  width: 90%;
 }
 /* SIDEBAR SECION END */
 
@@ -145,15 +162,25 @@ body {
   min-width: min-content;
   display: flex;
   flex-direction: row;
-  margin-bottom: 44px;
-  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 45px;
+  margin-top: 45px;
+  justify-content: space-evenly;
 }
+
 #profile-header-navigation {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0%;
   height: 172px;
   /* background-color: yellow; */
   /* border: solid yellow; */
   min-width: fit-content;
   width: 400px;
+  padding: 5%;
 }
 
 #profile-header-navigation ul:first-child {
@@ -161,17 +188,49 @@ body {
 }
 
 #row {
+  /* background-color: blue; */
+  font-weight: 500;
   display: flex;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  gap: 2%;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
 }
 #column {
+  /* background-color: blue; */
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 0%;
+  margin-top: 5%;
+  /* margin: 0%; */
+  gap: 5%;
+  /* justify-content: space-evenly; */
+}
+
+#join-multiverse-button {
+  background-color: rgba(255, 255, 255, 0.19);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* width: min-content; */
+  padding: 5%;
+  /* height: fit-content; */
+}
+#join-multiverse-button > p {
+  padding: 0%;
+  margin: 0%;
 }
 #row li {
   /* temporary */
   /* margin: 1%; */
+  margin: 0%;
+  padding: 0%;
   list-style: none;
 }
 #row h2 {
@@ -182,24 +241,24 @@ body {
   background-color: rgba(255, 255, 255, 0.19);
   padding-left: 3%;
   padding-right: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
   border-radius: 6px;
+  width: 30%;
   display: flex;
   align-items: center;
 }
 
 #column li {
+  margin: 0%;
+  padding: 0%;
   color: white;
   list-style: none;
 }
-#profile-picture {
-  display: flex;
-  justify-content: center;
-  /* background-color: grey; */
-  width: 292px;
-  height: 172px;
-}
-#profile-picture img {
-  image-rendering: crisp-edges;
+#column > li > h3 {
+  margin: 5%;
+  padding: 0%;
+  /* background-color: blueviolet; */
 }
 
 /* HEADER END */
@@ -225,6 +284,8 @@ body {
 #nav-on-main div {
   width: 60px;
   color: rgb(168, 168, 168);
+  font-weight: 400;
+  font-size: small;
 }
 #nav-on-main a {
   /* background-color: rgb(168, 168, 168); */
