@@ -13,12 +13,13 @@ body {
 
 /* SIDEBAR SECION START */
 .sidebar {
-  background-color: brown;
+  /* background-color: brown; */
+  border-right: 0.1px solid rgb(76, 76, 76);
   /* width: 245px; */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: stretch;
   align-items: center;
   position: fixed;
   flex-grow: 1;
@@ -36,35 +37,81 @@ body {
 }
 
 #logo {
-  background-color: aquamarine;
+  /* padding-top: 10%; */
+  /* height: 10%; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+  /* background-color: aquamarine; */
+  flex-grow: 1;
+
   /* width: 220px; */
-  height: 92px;
+  /* height: 92px; */
+}
+.logo-letter-visible {
+  fill: white;
+  color: white;
+  stroke: 1px white;
+}
+.logo-letter-hidden {
+  fill: none;
+  color: none !important;
+  stroke: 0px transparent !important;
 }
 
 #main-nav {
-  background-color: rgb(255, 0, 221);
+  /* background-color: rgb(255, 0, 221); */
   /* width: 220px; TEMPORARY */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
+  flex-grow: 4;
 }
 
 #upper-nav {
-  background-color: rgb(188, 236, 16);
+  /* background-color: rgb(188, 236, 16); */
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5%;
   /* width: 220px; */
-  height: 416px;
+  flex-grow: 6;
 }
 .menuitem {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5%;
   /* width: 220px; */
-  height: 52px;
-  border: 3px solid rgb(12, 46, 240);
+  height: 8%;
+  /* border: 3px solid rgb(12, 46, 240); */
+}
+#profile-button-image-container {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+}
+#profile-button-image {
+  width: 100%;
+  border-radius: 50%;
 }
 
 #lower-nav {
-  margin-top: 20%;
-  background-color: blueviolet;
-  /* width: 220px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* gap: 10%; */
+  flex-grow: 1;
+  /* margin-top: 20%; */
+  /* background-color: blueviolet; */
+  padding-top: 10%;
+  padding-bottom: 10%;
+  width: 80%;
 }
 /* SIDEBAR SECION END */
 
@@ -163,7 +210,7 @@ body {
   width: 930px;
   /* background-color: rgb(14, 228, 29); */
   /* margin-bottom: 20px; */
-  border-top: 1px solid grey;
+  border-top: 0.5px solid rgb(76, 76, 76);
   border-bottom: none;
   border-left: none;
   border-right: none;
