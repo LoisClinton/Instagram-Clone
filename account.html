@@ -39,26 +39,27 @@
       <nav id="main-nav">
         <div id="upper-nav">
           <div id="home" class="menuitem">
-            <svg
-              aria-label="Home"
-              class="x1lliihq x1n2onr6"
-              color="rgb(245, 245, 245)"
-              fill="rgb(245, 245, 245)"
-              height="24"
-              role="img"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <title>Home</title>
-              <path
-                d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z"
-                fill="none"
-                stroke="currentColor"
-                stroke-linejoin="round"
-                stroke-width="2"
-              ></path>
-            </svg>
-            <h3>Home</h3>
+            <a href="./feed.html" style="color: white">
+              <svg
+                aria-label="Home"
+                color="rgb(245, 245, 245)"
+                fill="rgb(245, 245, 245)"
+                height="24"
+                role="img"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <title>Home</title>
+                <path
+                  d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+              <h3>Home</h3>
+            </a>
           </div>
           <div id="search" class="menuitem">
             <svg
@@ -309,51 +310,58 @@
             </svg>
             <h3>Threads</h3>
           </div>
-          <div id="more" class="menuitem">
-            <svg
-              aria-label="Settings"
-              fill="currentColor"
-              height="24"
-              role="img"
-              viewBox="0 0 24 24"
-              width="24"
-            >
-              <title>Settings</title>
-              <line
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                x1="3"
-                x2="21"
-                y1="4"
-                y2="4"
-              ></line>
-              <line
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                x1="3"
-                x2="21"
-                y1="12"
-                y2="12"
-              ></line>
-              <line
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                x1="3"
-                x2="21"
-                y1="20"
-                y2="20"
-              ></line>
-            </svg>
-            <h3>More</h3>
+          <div class="dropdown">
+            <div onclick="myFunction()" id="more" class="menuitem">
+              <svg
+                aria-label="Settings"
+                fill="currentColor"
+                height="24"
+                role="img"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <title>Settings</title>
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  x1="3"
+                  x2="21"
+                  y1="4"
+                  y2="4"
+                ></line>
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  x1="3"
+                  x2="21"
+                  y1="12"
+                  y2="12"
+                ></line>
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  x1="3"
+                  x2="21"
+                  y1="20"
+                  y2="20"
+                ></line>
+              </svg>
+              <h3>More</h3>
+              <div id="more-dropdown" class="dropdown-content">
+                <a href="./feed.html">Feed</a>
+                <a href="#accountSettings">Account Settings</a>
+                <a href="./index.html">Log out</a>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
@@ -694,6 +702,29 @@
 
       <footer></footer>
     </section>
+
+    <!-- TEMPORARY -->
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("more-dropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches("#more")) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains("show")) {
+              openDropdown.classList.remove("show");
+            }
+          }
+        }
+      };
+    </script>
 
     <script src="script.js"></script>
   </body>
