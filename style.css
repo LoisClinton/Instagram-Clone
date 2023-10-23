@@ -537,13 +537,25 @@ svg {
   height: 35px;
   width: 280px;
 }
-
-#log-in-button {
+#log-in-btn-container {
   color: white;
   background-color: #3498db;
   border: 0;
   border-radius: 6px;
   padding: 5px;
+}
+#log-in-button {
+  justify-self: center;
+  color: white;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+#log-in-btn-container:hover,
+#log-in-button:hover {
+  background-color: #4ca2dc;
 }
 
 #OR-image img {
