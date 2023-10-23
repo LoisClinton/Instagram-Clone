@@ -507,6 +507,12 @@ svg {
   justify-content: center;
   align-items: center;
 }
+#landing-page-logo {
+  font-family: "Dancing Script", sans-serif;
+  font-weight: 600;
+  font-size: x-large;
+  text-align: center;
+}
 
 #login-container {
   display: flex;
@@ -514,7 +520,10 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  border: 0.5px solid rgb(155, 155, 155);
+  border-radius: 6px;
   height: 50%;
+  padding: 20px;
 }
 
 #login-form-input {
@@ -523,5 +532,59 @@ svg {
   justify-content: center;
   align-content: center;
 }
-.input-box {
+
+#input-field {
+  height: 35px;
+  width: 280px;
+}
+
+#log-in-button {
+  color: white;
+  background-color: #3498db;
+  border: 0;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+#OR-image img {
+  width: 280px;
+}
+#log-with-facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 35px;
+}
+#log-with-facebook img {
+  height: 20px;
+}
+
+#log-with-facebook-text {
+  font-size: small;
+  font-weight: 600;
+  color: #385185;
+}
+#dont-have-account {
+  gap: 10px;
+  border: 0.5px solid rgb(155, 155, 155);
+  border-radius: 6px;
+  height: 50%;
+  padding: 20px;
+  margin-top: 10px;
+}
+#dont-have-account b {
+  color: #3498db;
+  font-weight: 600;
+}
+
+#app-store-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#app-store-icons img {
+  border-radius: 6px;
 }
